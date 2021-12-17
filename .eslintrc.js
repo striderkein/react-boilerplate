@@ -18,6 +18,13 @@ module.exports = {
   plugins: [
     'react',
   ],
+  settings: {
+    'import/resolver': {
+      typescript: {
+        project: './tsconfig.json',
+      },
+    },
+  },
   rules: {
     "react/function-component-definition": [
       2,
@@ -25,5 +32,8 @@ module.exports = {
         namedComponents: "function-declaration",
       },
     ],
+    'import/prefer-default-export': 0,
+    'react/jsx-filename-extension': [0],
+    'import/extensions': 'off',
   },
 };
