@@ -16,6 +16,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "fmt": "npx prettier --write ./src",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
