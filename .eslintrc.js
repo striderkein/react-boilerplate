@@ -19,5 +19,11 @@ module.exports = {
     'react',
   ],
   rules: {
+    "react/function-component-definition": [
+      2,
+      {
+        namedComponents: "function-declaration",
+      },
+    ],
   },
 };
