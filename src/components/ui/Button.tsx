@@ -1,4 +1,4 @@
-import React from 'react'
+import type { FC } from 'react'
 
 /*
 export type IButton = React.DetailedHTMLProps<
@@ -7,7 +7,7 @@ export type IButton = React.DetailedHTMLProps<
 >
  */
 
-export const Button: React.FC = () => {
+export const Button: FC = () => {
   return (
     <button type="button">push</button>
   )
