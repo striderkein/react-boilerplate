@@ -7,4 +7,8 @@ export type IButton = React.DetailedHTMLProps<
 >
  */
 
-export const Button = (): JSX.Element => (<button type="button">push</button>)
+export const Button: React.FC = () => {
+  return (
+    <button type="button">push</button>
+  )
+}
