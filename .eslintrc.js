@@ -32,5 +32,6 @@ module.exports = {
         namedComponents: "function-declaration",
       },
     ],
+    "import/no-unresolved": "off", // cannot handle `paths` in jsconfig
   },
 };
