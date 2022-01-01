@@ -20,9 +20,9 @@ module.exports = {
   ],
   settings: {
     'import/resolver': {
-      'babel-module': {
-        'root': ['./src'],
-      },
+      'jsconfig': {
+        'config': 'jsconfig.json'
+      }
     },
   },
   rules: {

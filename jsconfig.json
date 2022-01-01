@@ -2,9 +2,12 @@
   "compilerOptions": {
     "target": "es2016",
     "module": "commonjs",
-    "baseUrl": "src",
+    "baseUrl": ".",
+    "jsx": "react",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
     "allowJs": true
   },
-  "incrude":["src"],
   "exclude": ["node_modules"]
 }
