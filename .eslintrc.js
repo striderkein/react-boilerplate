@@ -19,6 +19,13 @@ module.exports = {
   plugins: [
     'react',
   ],
+  settings: {
+    'import/resolver': {
+      'babel-module': {
+        'root': ['./src'],
+      },
+    },
+  },
   rules: {
     "react/function-component-definition": [
       2,
