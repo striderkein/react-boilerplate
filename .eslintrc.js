@@ -35,5 +35,6 @@ module.exports = {
     ],
     'arrow-body-style': ['error', 'always'],
     'react/prop-types': 'off',
+    'react/react-in-jsx-scope': 'off',
   },
 };
