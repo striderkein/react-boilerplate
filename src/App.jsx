@@ -2,6 +2,7 @@ import React from 'react'
 import logo from 'logo.svg'
 // import 'App.css'
 import 'styles/App.css'
+import Button from 'components/ui/Button'
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           Learn React
         </a>
       </header>
+      <Button endpoint="https://jsonplaceholder.typicode.com/todos" />
     </div>
   )
 }
