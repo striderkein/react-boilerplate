@@ -34,5 +34,6 @@ module.exports = {
       },
     ],
     'arrow-body-style': ['error', 'always'],
+    'react/prop-types': 'off',
   },
 };
