@@ -33,7 +33,7 @@ module.exports = {
         namedComponents: "arrow-function"
       },
     ],
-    'arrow-body-style': ['error', 'always'],
+    'arrow-body-style': 0,
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
   },
