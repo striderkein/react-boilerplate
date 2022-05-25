@@ -22,3 +22,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.app-header {
+  height: 7vh;
+  background-color: var(--dark-600);
+}
+
+.App-logo {
+  /* height: 40vmin; */
+  height: 7vh;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
