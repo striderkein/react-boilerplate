@@ -31,6 +31,7 @@ module.exports = {
       2,
       {
         namedComponents: "function-declaration",
+        unnamedComponents: 'function-expression',
       },
     ],
     'import/prefer-default-export': 0,
