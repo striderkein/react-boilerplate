@@ -37,6 +37,15 @@ code {
   pointer-events: none;
 }
 
+.button-cotainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.square-button {
+  height: 100%;
+}
+
 .graph {
   background-color: var(--dark-500);
 }
