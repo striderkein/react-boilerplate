@@ -82,6 +82,10 @@ code {
   color: var(--light);
 }
 
+.my-exercise-list {
+  column-count: 2;
+}
+
 .graph {
   background-color: var(--dark-500);
 }
