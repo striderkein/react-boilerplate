@@ -3,13 +3,6 @@ import type { FC } from 'react'
 import { BrowserRouter, Switch, Route, NavLink } from "react-router-dom";
 import { Graph, Input } from 'components'
 
-/*
-export type IButton = React.DetailedHTMLProps<
-    React.ButtonHTMLAttributes<HTMLButtonElement>,
-    HTMLButtonElement
->
- */
-
 export const ButtonContainer: FC = () => {
   return (
     <BrowserRouter>
