@@ -24,14 +24,21 @@ code {
 }
 
 .app-header {
+  display: flex;
+  align-items: flex-end;
+  /* padding: 2vh 0 0; */
   height: 7vh;
   background-color: var(--dark-600);
 }
 
 .App-logo {
   /* height: 40vmin; */
-  height: 7vh;
+  height: 5vh;
   pointer-events: none;
+}
+
+.graph {
+  background-color: var(--dark-500);
 }
 
 @media (prefers-reduced-motion: no-preference) {

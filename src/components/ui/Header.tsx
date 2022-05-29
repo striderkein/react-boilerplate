@@ -9,8 +9,10 @@ export type IButton = React.DetailedHTMLProps<
 >
  */
 
-export const Header: FC = () => (
-  <header className='app-header'>
-    <img src={logo} className="App-logo" alt="logo" />
-  </header>
-)
+export const Header: FC = () => {
+  return (
+    <header className='app-header'>
+      <img src={logo} className="App-logo" alt="logo" />
+    </header>
+  )
+}

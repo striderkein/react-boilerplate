@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header } from 'components/ui/Header'
+import { Graph, Header, Input } from 'components'
 import './App.css'
 
 function App() {
@@ -10,10 +10,17 @@ function App() {
       </header>
       */}
       <Header />
-      <body>
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        {/* <Button /> */}
-      </body>
+      {/* <body> */}
+      <Input />
+      {/* TODO: 下記のコンポーネントが必要 */}
+      {/*
+        <ButtonContainer />
+        <BodyRecord />
+        <MyExercise />
+        <MyDiary />
+        */}
+      <Graph />
+      {/* </body> */}
     </div>
   )
 }
