@@ -7,7 +7,7 @@ type Props = {
 }
 
 export const SquareButton: FC<Props> = (props) => {
-  const { titleEn, titleJa, imagePath } = props;
+  const { titleEn, titleJa, imagePath } = props
 
   return (
     <div className='square-button'>
