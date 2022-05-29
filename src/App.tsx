@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { Header, ButtonContainer } from 'components'
 import './App.css'
 
-function App() {
+export const App: FC = () => {
   return (
     <div className="App">
       <Header />
@@ -13,5 +13,3 @@ function App() {
     </div>
   )
 }
-
-export default App

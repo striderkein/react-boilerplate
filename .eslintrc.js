@@ -30,7 +30,7 @@ module.exports = {
     "react/function-component-definition": [
       2,
       {
-        namedComponents: "function-declaration",
+        namedComponents: 'arrow-function',
         unnamedComponents: 'function-expression',
       },
     ],
@@ -38,5 +38,6 @@ module.exports = {
     'react/jsx-filename-extension': [0],
     'import/extensions': 'off',
     'react/react-in-jsx-scope': 'off',
+    'arrow-body-style': ['warn', 'always'],
   },
 };
