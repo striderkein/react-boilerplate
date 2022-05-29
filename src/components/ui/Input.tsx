@@ -13,8 +13,9 @@ export const Input: FC = () => {
   const [text, setText] = useState<string>("");
 
   // テキストボックス入力時に入力内容をStateに設定
-  const onChangeText = (e: ChangeEvent<HTMLInputElement>) =>
+  const onChangeText = (e: ChangeEvent<HTMLInputElement>) => {
     setText(e.target.value);
+  }
 
   return (
     <div>
