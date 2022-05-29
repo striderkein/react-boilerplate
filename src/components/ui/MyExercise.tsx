@@ -8,6 +8,7 @@ interface Exercise {
 }
 
 export const MyExercise: FC = () => {
+  // FIXME: get from state
   const data: Exercise[] = [
     { type: '家事全般', duration: 10, calory: 16 },
     { type: '家事全般', duration: 20, calory: 26 },
