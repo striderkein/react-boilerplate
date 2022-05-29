@@ -21,10 +21,6 @@ export const ButtonContainer: FC = () => (
       </li>
     </ul>
     <Switch>
-      {/* TODO: 下記のコンポーネントが必要 */}
-      {/*
-        <ButtonContainer />
-        */}
       <Route exact path="/input">
         <Input />
       </Route>
