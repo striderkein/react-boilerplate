@@ -9,7 +9,7 @@ export const MyExercise: FC = () => {
   return (
     // <BrowserRouter>
     <div className='my-exercise'>
-      my exercise
+      <header className='exercise-header'><span className='exercise-title'>MY EXERCISE</span><span className='exercise-date'>2021.05.21</span></header>
       <ul className='my-exercise-list'>
         <li>
           <span className='exercise-type'>家事全般</span><span className='exercise-duration'>10 min</span>

@@ -82,8 +82,33 @@ code {
   color: var(--light);
 }
 
+.my-exercise {
+  background-color: var(--dark-500);
+  color: var(--light);
+}
+
+.exercise-header {
+  display: flex;
+}
+
+.exercise-title {
+  width: 7vw;
+  text-align: left;
+  font-size: 15px;
+  word-wrap: break-word;
+}
+
+.exercise-date {
+  font-size: 22px;
+}
+
 .my-exercise-list {
   column-count: 2;
+}
+
+.exercise-duration,
+.exercise-calory {
+  color: var(--primary-300);
 }
 
 .graph {
