@@ -7,9 +7,9 @@ export const App: FC = () => {
     <div className="App">
       <Header />
       <ButtonContainer />
-      {/* <BodyRecord /> */}<Graph />
-      {/* <MyExercise /> */}<div>MyExercise</div>
-      {/* <MyDiary /> */}<div>MyDiary</div>
+      <Graph />
+      <div>MyExercise</div>
+      <div>MyDiary</div>
     </div>
   )
 }
