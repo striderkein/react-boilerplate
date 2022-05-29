@@ -8,7 +8,7 @@ import { SquareButton } from 'components'
 export const ButtonContainer: FC = () => {
   return (
     // <BrowserRouter>
-    <div className='button-container'>
+    <div className='button-container ha-contents'>
       {/* <SquareButton titleEn='BODY RECORD' titleJa='自分のカラダの記録' imagePath='./src/assets/images/btn-body-record.jpg' /> */}
       <SquareButton titleEn='BODY RECORD' titleJa='自分のカラダの記録' imagePath='/images/btn-body-record.jpg' />
       <SquareButton titleEn='MY EXERCISE' titleJa='自分の運動の記録' imagePath='/images/btn-my-exercise.jpg' />

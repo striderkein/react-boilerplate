@@ -61,7 +61,7 @@ export const Graph: FC = () => {
   return (
     <div>
       <Line
-        className="graph"
+        className="graph ha-contents"
         height={300}
         width={300}
         data={graphData}

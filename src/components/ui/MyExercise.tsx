@@ -8,7 +8,7 @@ import { ExerciseItem } from 'components'
 export const MyExercise: FC = () => {
   return (
     // <BrowserRouter>
-    <div className='my-exercise'>
+    <div className='my-exercise ha-contents'>
       <header className='exercise-header'><span className='exercise-title'>MY EXERCISE</span><span className='exercise-date'>2021.05.21</span></header>
       <main>
         <ul className='my-exercise-list'>
