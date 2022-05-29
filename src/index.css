@@ -45,7 +45,9 @@ code {
 }
 
 .square-button {
+  display: flex;
   height: 100%;
+  position: relative;
 }
 
 .btn-bg {
@@ -55,6 +57,20 @@ code {
 
 .btn-bg:hover {
   filter: grayscale(0);
+}
+
+.title-en {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title-ja {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .graph {
