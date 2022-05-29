@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { Header, ButtonContainer } from 'components'
+import { Graph, Header, ButtonContainer } from 'components'
 import './App.css'
 
 export const App: FC = () => {
@@ -7,7 +7,7 @@ export const App: FC = () => {
     <div className="App">
       <Header />
       <ButtonContainer />
-      {/* <BodyRecord /> */}<div>BodyRecord</div>
+      {/* <BodyRecord /> */}<Graph />
       {/* <MyExercise /> */}<div>MyExercise</div>
       {/* <MyDiary /> */}<div>MyDiary</div>
     </div>

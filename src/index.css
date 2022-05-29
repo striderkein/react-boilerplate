@@ -40,10 +40,21 @@ code {
 .button-cotainer {
   display: flex;
   justify-content: space-around;
+  /* 2.56 = 1024 / (288 + 56 * 2) */
+  height: 26vh;
 }
 
 .square-button {
   height: 100%;
+}
+
+.btn-bg {
+  height: 100%;
+  filter: grayscale(100%);
+}
+
+.btn-bg:hover {
+  filter: grayscale(0);
 }
 
 .graph {
