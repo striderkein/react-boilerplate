@@ -10,23 +10,25 @@ export type IButton = React.DetailedHTMLProps<
 >
  */
 
-export const ButtonContainer: FC = () => (
-  <BrowserRouter>
-    <ul>
-      <li>
-        <NavLink to="/input">input</NavLink>
-      </li>
-      <li>
-        <NavLink to="/graph">graph</NavLink>
-      </li>
-    </ul>
-    <Switch>
-      <Route exact path="/input">
-        <Input />
-      </Route>
-      <Route exact path="/graph">
-        <Graph />
-      </Route>
-    </Switch>
-  </BrowserRouter>
-)
+export const ButtonContainer: FC = () => {
+  return (
+    <BrowserRouter>
+      <ul>
+        <li>
+          <NavLink to="/input">input</NavLink>
+        </li>
+        <li>
+          <NavLink to="/graph">graph</NavLink>
+        </li>
+      </ul>
+      <Switch>
+        <Route exact path="/input">
+          <Input />
+        </Route>
+        <Route exact path="/graph">
+          <Graph />
+        </Route>
+      </Switch>
+    </BrowserRouter>
+  )
+}
