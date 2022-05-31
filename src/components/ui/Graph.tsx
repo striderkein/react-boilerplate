@@ -54,7 +54,7 @@ const graphData = {
 }
 
 const options = {
-  maintainAspectRatio: false,
+  maintainAspectRatio: true,
 };
 
 export const Graph: FC = () => {
@@ -62,7 +62,7 @@ export const Graph: FC = () => {
     <div>
       <Line
         className="graph ha-contents"
-        height={300}
+        height={100}
         width={300}
         data={graphData}
         options={options}
