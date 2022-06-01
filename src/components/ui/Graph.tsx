@@ -7,7 +7,7 @@ import '../../index.css'
 
 Chart.register(...registerables)
 
-const labels: string[] = ["1 月", "2 月", "3 月", "4 月", "5 月", "6 月"]
+const labels: string[] = ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"]
 /*
 export type IButton = React.DetailedHTMLProps<
     React.ButtonHTMLAttributes<HTMLButtonElement>,
@@ -40,15 +40,17 @@ const graphData = {
   labels,
   datasets: [
     {
-      label: "A社",
-      data: [65, 59, 60, 81, 56, 55],
-      borderColor: "rgb(75, 192, 192)",
+      label: "目標体重",
+      data: [65, 59, 60, 81, 56, 55, 65, 59, 60, 81, 56, 55],
+      // borderColor: "rgb(75, 192, 192)",
+      borderColor: "#8FE9D0",
       backgroundColor: "#EBF5FB",
     },
     {
-      label: "B社",
-      data: [60, 55, 57, 61, 75, 50],
-      borderColor: "rgb(75, 100, 192)",
+      label: "実際の体重",
+      data: [60, 55, 57, 61, 75, 50, 60, 55, 57, 61, 75, 50],
+      // borderColor: "rgb(75, 100, 192)",
+      borderColor: "#FFCC21",
     },
   ],
 }
