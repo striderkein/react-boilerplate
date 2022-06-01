@@ -17,7 +17,7 @@ export const MyDiary: FC = () => {
 
   return (
     <div className='my-diary ha-contents'>
-      <header className='diary-header'><span className='diary-title'>MY DIARY</span><span className='exercise-date'>2021.05.21</span></header>
+      <header className='diary-header'><span className='diary-title'>MY DIARY</span></header>
       <main>
         <ul className='my-diary-list'>
           {data.map((d) => {
