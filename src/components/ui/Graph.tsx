@@ -61,7 +61,7 @@ const options = {
 
 export const Graph: FC = () => {
   return (
-    <div>
+    <div className="ha-contents">
       <Line
         className="graph ha-contents"
         height={100}
