@@ -11,7 +11,9 @@ export const SquareButton: FC<Props> = (props) => {
 
   return (
     <div className='square-button'>
-      <img className='btn-bg' src={imagePath} alt={titleJa} />
+      <div className="photo-frame">
+        <img className='btn-bg' src={imagePath} alt={titleJa} />
+      </div>
       <div className='title-en'>{titleEn}</div>
       <div className='title-ja'>{titleJa}</div>
     </div>

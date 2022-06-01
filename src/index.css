@@ -34,6 +34,18 @@ code {
   background-color: var(--dark-600);
 }
 
+.app-header__left {
+  /* impl */
+}
+
+.app-header__middle {
+  /* impl */
+}
+
+.app-header__right {
+  /* impl */
+}
+
 .App-logo {
   /* height: 40vmin; */
   height: 5vh;
@@ -58,9 +70,15 @@ code {
 .square-button {
   display: flex;
   height: 100%;
+  width: 20vw;
   position: relative;
   /* padding: 24px; */
+  border: 1.5rem solid var(--primary-300);
   color: var(--primary-300);
+}
+
+.photo-frame {
+  overflow: hidden;
 }
 
 .btn-bg {
