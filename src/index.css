@@ -97,17 +97,16 @@ code {
   color: var(--light);
 }
 
-.my-diary {
-  background-color: var(--light);
-  color: var(--dark-600);
-}
-
 .exercise-header {
   display: flex;
 }
 
-.diary-header {
-  display: flex;
+.my-exercise-list {
+  column-count: 2;
+}
+
+.exercise-date {
+  font-size: 22px;
 }
 
 .exercise-title {
@@ -117,6 +116,11 @@ code {
   word-wrap: break-word;
 }
 
+.my-diary {
+  background-color: var(--light);
+  color: var(--dark-600);
+}
+
 .diary-title {
   width: 7vw;
   text-align: left;
@@ -124,20 +128,32 @@ code {
   word-wrap: break-word;
 }
 
-.exercise-date {
-  font-size: 22px;
+.my-diary-list {
+  column-count: 4;
+}
+
+.diary-header {
+  display: flex;
+}
+
+.diary-item {
+  /* width: 231px; */
+  height: 231px;
+  border: .1rem solid var(--dark-500);
 }
 
 .diary-date {
   font-size: 22px;
 }
 
-.my-exercise-list {
-  column-count: 2;
+.diary-summary {
+  /* width: 100%; */
+  /* font-size: 22px; */
 }
 
-.my-diary-list {
-  column-count: 4;
+.diary-content {
+  width: 100%;
+  /* font-size: 22px; */
 }
 
 .exercise-duration,
