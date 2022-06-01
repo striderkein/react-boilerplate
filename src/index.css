@@ -24,7 +24,8 @@ code {
     monospace;
 }
 
-.app-header {
+.app-header,
+.app-footer {
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
