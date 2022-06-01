@@ -6,10 +6,12 @@ export const App: FC = () => {
   return (
     <div className="App">
       <Header />
-      <ButtonContainer />
-      <Graph />
-      <MyExercise />
-      <MyDiary />
+      <div className="contents">
+        <ButtonContainer />
+        <Graph />
+        <MyExercise />
+        <MyDiary />
+      </div>
     </div>
   )
 }
