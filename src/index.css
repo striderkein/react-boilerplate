@@ -91,7 +91,16 @@ code {
   color: var(--light);
 }
 
+.my-diary {
+  background-color: var(--light);
+  color: var(--dark-600);
+}
+
 .exercise-header {
+  display: flex;
+}
+
+.diary-header {
   display: flex;
 }
 
@@ -102,12 +111,27 @@ code {
   word-wrap: break-word;
 }
 
+.diary-title {
+  width: 7vw;
+  text-align: left;
+  font-size: 15px;
+  word-wrap: break-word;
+}
+
 .exercise-date {
+  font-size: 22px;
+}
+
+.diary-date {
   font-size: 22px;
 }
 
 .my-exercise-list {
   column-count: 2;
+}
+
+.my-diary-list {
+  column-count: 4;
 }
 
 .exercise-duration,
