@@ -40,6 +40,10 @@ code {
   pointer-events: none;
 }
 
+.contents {
+  padding: 0 10vw 0;
+}
+
 .ha-contents {
   margin: 56px 0 0;
 }
