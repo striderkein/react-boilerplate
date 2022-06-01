@@ -13,9 +13,9 @@ export const Header: FC = () => {
         <img src={logo} className="App-logo" alt="Healthyロゴ" />
       </div>
       <div className="app-header__middle">
-        <img src={navMyRecord} className="nav--my-record" alt="自分の記録" />
-        <img src={navChallenge} className="nav--challenge" alt="チャレンジ" />
-        <img src={navInfo} className="nav--info" alt="お知らせ" />
+        <img src={navMyRecord} className="nav--my-record" alt="自分の記録" /><span className="nav-label">自分の記録</span>
+        <img src={navChallenge} className="nav--challenge" alt="チャレンジ" /><span className="nav-label">チャレンジ</span>
+        <img src={navInfo} className="nav--info" alt="お知らせ" /><span className="nav-label">お知らせ</span>
       </div>
       <div className="app-header__right">
         <img src={humbergerMenu} className="menu" alt="メニュー" />
