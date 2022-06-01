@@ -19,11 +19,11 @@ export const MyDiary: FC = () => {
     <div className='my-diary ha-contents'>
       <header className='diary-header'><span className='diary-title'>MY DIARY</span></header>
       <main>
-        <ul className='my-diary-list'>
+        <div className='my-diary-list'>
           {data.map((d) => {
             return <DiaryItem date={d.date} content={d.content} />
           })}
-        </ul>
+        </div>
       </main>
     </div>
   )
