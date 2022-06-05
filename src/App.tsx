@@ -1,16 +1,22 @@
 import React, { FC } from 'react'
-import { Graph, Header, ButtonContainer, MyDiary, MyExercise, Footer } from 'components'
+import { Graph, Header, InputDiary, ButtonContainer, MyDiary, MyExercise, Footer } from 'components'
 import './App.css'
+import { useDiary } from 'hooks/useDiary'
+import { useDiaryInput } from 'hooks/useDiaryInput'
 
 export const App: FC = () => {
+  const { diaries, addDiary } = useDiary();
+  const { inputDiary, toggleDiaryInput } = useDiaryInput(false)
+
   return (
     <div className="App">
       <Header />
       <div className="contents">
-        <ButtonContainer />
+        <ButtonContainer handler={toggleDiaryInput} />
+        {inputDiary && <InputDiary handler={addDiary} />}
         <Graph />
         <MyExercise />
-        <MyDiary />
+        <MyDiary key={Date.now()} diaries={diaries} />
       </div>
       <Footer />
     </div>

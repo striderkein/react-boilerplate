@@ -1,18 +1,18 @@
 import type { FC } from 'react'
-// import { BrowserRouter, Switch, Route, Link, NavLink } from "react-router-dom";
-// import { BrowserRouter, Switch, Route, NavLink } from "react-router-dom";
-// import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { SquareButton } from 'components'
-// import bgBodyRecord from '/images/btn-body-record.jpg'
 
-export const ButtonContainer: FC = () => {
+interface IButtonContainerProps {
+  handler: () => void
+}
+
+export const ButtonContainer: FC<IButtonContainerProps> = (props) => {
+  const { handler } = props
+
   return (
-    // <BrowserRouter>
     <div className='button-container ha-contents'>
-      {/* <SquareButton titleEn='BODY RECORD' titleJa='自分のカラダの記録' imagePath='./src/assets/images/btn-body-record.jpg' /> */}
-      <SquareButton titleEn='BODY RECORD' titleJa='自分のカラダの記録' imagePath='/images/btn-body-record.jpg' />
-      <SquareButton titleEn='MY EXERCISE' titleJa='自分の運動の記録' imagePath='/images/btn-my-exercise.jpg' />
-      <SquareButton titleEn='MY DIARY' titleJa='自分の日記' imagePath='/images/btn-my-diary.jpg' />
+      <SquareButton handler={() => { console.log('NOT IMPLEMENTED') }} titleEn='BODY RECORD' titleJa='自分のカラダの記録' imagePath='/images/btn-body-record.jpg' />
+      <SquareButton handler={() => { console.log('NOT IMPLEMENTED') }} titleEn='MY EXERCISE' titleJa='自分の運動の記録' imagePath='/images/btn-my-exercise.jpg' />
+      <SquareButton handler={handler} titleEn='MY DIARY' titleJa='自分の日記' imagePath='/images/btn-my-diary.jpg' />
     </div>
   )
 }
