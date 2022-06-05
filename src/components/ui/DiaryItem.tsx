@@ -14,7 +14,7 @@ export const DiaryItem: FC<Props> = (props) => {
   return (
     <div className="diary-item">
       <div className='diary-date'>{dayjs(date).format(DATE_FORMAT)}</div>
-      <div className='diary-summary'>{content}</div>
+      <div className='diary-summary'>{content.slice(0, 400)}</div>
       <div className='diary-content'>{content}</div>
     </div>
   )

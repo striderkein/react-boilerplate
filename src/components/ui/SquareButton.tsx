@@ -1,16 +1,24 @@
-import type { FC } from 'react'
+/* eslint-disable jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions */
+import { FC } from 'react'
 
-type Props = {
+interface ButtonProps {
+  handler: () => void,
   titleEn: string,
   titleJa: string,
   imagePath: string,
 }
 
-export const SquareButton: FC<Props> = (props) => {
-  const { titleEn, titleJa, imagePath } = props
+export const SquareButton: FC<ButtonProps> = (props) => {
+  const { handler, titleEn, titleJa, imagePath } = props
+
+  const onClick = () => {
+    handler()
+  }
 
   return (
-    <div className='square-button'>
+
+    <div /* eslint-disable-line jsx-a11y/no-static-element-interactions */
+      className='square-button' onClick={onClick}>
       <div className="photo-frame">
         <img className='btn-bg' src={imagePath} alt={titleJa} />
       </div>
