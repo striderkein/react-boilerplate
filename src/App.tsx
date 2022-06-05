@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, useEffect } from 'react'
 import { Graph, Header, InputDiary, ButtonContainer, MyDiary, MyExercise, Footer } from 'components'
 import './App.css'
 import { useDiary } from 'hooks/useDiary'
@@ -7,6 +7,10 @@ import { useDiaryInput } from 'hooks/useDiaryInput'
 export const App: FC = () => {
   const { diaries, addDiary } = useDiary();
   const { inputDiary, toggleDiaryInput } = useDiaryInput(false)
+
+  useEffect(() => {
+    toggleDiaryInput()
+  }, [diaries])
 
   return (
     <div className="App">
