@@ -9,7 +9,7 @@ export const App: FC = () => {
   const { inputDiary, toggleDiaryInput } = useDiaryInput(false)
 
   useEffect(() => {
-    toggleDiaryInput()
+    if (inputDiary) toggleDiaryInput()
   }, [diaries])
 
   return (
